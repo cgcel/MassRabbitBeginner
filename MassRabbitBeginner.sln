@@ -5,9 +5,14 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D030BCBD-0DC2-4028-8145-FBF376D970C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.RabbitMQPublisher", "src\Sample.RabbitMQPublisher\Sample.RabbitMQPublisher.csproj", "{62551B78-F314-4B3A-8316-D19D5FAB261F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.RabbitMQPublisher", "src\Sample.RabbitMQPublisher\Sample.RabbitMQPublisher.csproj", "{62551B78-F314-4B3A-8316-D19D5FAB261F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.DoubleBusPublisher", "src\Sample.DoubleBusPublisher\Sample.DoubleBusPublisher.csproj", "{1FF4B982-2DA2-4CB3-BF42-A84A5502415B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.DoubleBusPublisher", "src\Sample.DoubleBusPublisher\Sample.DoubleBusPublisher.csproj", "{1FF4B982-2DA2-4CB3-BF42-A84A5502415B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassRabbitBeginner", "MassRabbitBeginner", "{62DA17B7-EC0F-4A47-9ECD-04BC3257ECBF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +33,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{D030BCBD-0DC2-4028-8145-FBF376D970C3} = {62DA17B7-EC0F-4A47-9ECD-04BC3257ECBF}
 		{62551B78-F314-4B3A-8316-D19D5FAB261F} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 	EndGlobalSection

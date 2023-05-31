@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassRabbitBeginner", "MassR
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.SimpleConsumer", "src\Sample.SimpleConsumer\Sample.SimpleConsumer.csproj", "{AFFB17B7-0444-4E30-81D7-A2632BD47177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 		{D030BCBD-0DC2-4028-8145-FBF376D970C3} = {62DA17B7-EC0F-4A47-9ECD-04BC3257ECBF}
 		{62551B78-F314-4B3A-8316-D19D5FAB261F} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
+		{AFFB17B7-0444-4E30-81D7-A2632BD47177} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB806431-D03A-450B-A499-833E0DA6236F}

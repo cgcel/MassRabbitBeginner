@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassRabbitBeginner", "MassR
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.SimpleConsumer", "src\Sample.SimpleConsumer\Sample.SimpleConsumer.csproj", "{AFFB17B7-0444-4E30-81D7-A2632BD47177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.SimpleConsumer", "src\Sample.SimpleConsumer\Sample.SimpleConsumer.csproj", "{AFFB17B7-0444-4E30-81D7-A2632BD47177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.MultiConsumer", "src\Sample.MultiConsumer\Sample.MultiConsumer.csproj", "{C12BEF85-8D61-4557-B7E2-027F39FEF645}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFB17B7-0444-4E30-81D7-A2632BD47177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12BEF85-8D61-4557-B7E2-027F39FEF645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12BEF85-8D61-4557-B7E2-027F39FEF645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12BEF85-8D61-4557-B7E2-027F39FEF645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12BEF85-8D61-4557-B7E2-027F39FEF645}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{62551B78-F314-4B3A-8316-D19D5FAB261F} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 		{1FF4B982-2DA2-4CB3-BF42-A84A5502415B} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 		{AFFB17B7-0444-4E30-81D7-A2632BD47177} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
+		{C12BEF85-8D61-4557-B7E2-027F39FEF645} = {D030BCBD-0DC2-4028-8145-FBF376D970C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB806431-D03A-450B-A499-833E0DA6236F}

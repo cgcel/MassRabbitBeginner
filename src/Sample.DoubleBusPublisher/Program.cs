@@ -47,6 +47,8 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
                     cfg.Password(setting.Password);
                 });
 
+                cfg.UseRawJsonSerializer();
+
                 cfg.Message<MetaStringModel>(x => x.SetEntityName(setting.ExchangeName));
 
                 cfg.Publish<MetaStringModel>(e =>
@@ -77,6 +79,8 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
                     cfg.Username(setting.UserName);
                     cfg.Password(setting.Password);
                 });
+
+                cfg.UseRawJsonSerializer();
 
                 cfg.Message<MetaGeneralModel>(x => x.SetEntityName(setting.ExchangeName));
 

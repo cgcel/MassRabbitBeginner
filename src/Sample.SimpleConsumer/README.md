@@ -1,4 +1,4 @@
-# Sample.SimpleRawJsonConsumer
+# Sample.SimpleConsumer
 
 ## About
 

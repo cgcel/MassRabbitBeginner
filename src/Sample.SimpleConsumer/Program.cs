@@ -40,8 +40,6 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
                     cfg.Password(setting.Password);
                 });
 
-                //cfg.Message<MetaStringModel>(x => x.SetEntityName(setting.ExchangeName));
-
                 cfg.ReceiveEndpoint(setting.QueueName, e =>
                 {
                     e.ConfigureConsumeTopology = false;

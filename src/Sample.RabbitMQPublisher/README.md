@@ -2,5 +2,5 @@
 
 ## About
 
-Send data to a predefine queue by using vhost, exchange name, routing key.
+Send Raw Json Data to a predefine queue by using vhost, exchange name, routing key.
 

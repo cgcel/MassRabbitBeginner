@@ -41,6 +41,8 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
 					cfg.Password(setting.Password);
 				});
 
+				cfg.UseRawJsonSerializer(); // only send raw json
+
 				cfg.Message<MetaStringModel>(x => x.SetEntityName(setting.ExchangeName)) ;
 
 				cfg.Publish<MetaStringModel>(e =>

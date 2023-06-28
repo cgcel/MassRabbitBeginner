@@ -1,10 +1,10 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using MassTransit;
-using Sample.SimpleConsumer.Model;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Sample.SimpleConsumer.Model;
+using Sample.SimpleConsumer.Service;
 
 try
 {
@@ -40,25 +40,23 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
                     cfg.Password(setting.Password);
                 });
 
-                cfg.Message<MetaStringModel>(x => x.SetEntityName(setting.ExchangeName));
+                //cfg.Message<MetaStringModel>(x => x.SetEntityName(setting.ExchangeName));
 
-                cfg.Publish<MetaStringModel>(e =>
+                cfg.ReceiveEndpoint(setting.QueueName, e =>
                 {
-                    e.Durable = true;
-                    e.ExchangeType = "topic";
-                    e.AutoDelete = false;
-                    e.BindQueue(setting.ExchangeName, setting.QueueName, c =>
-                    {
-                        c.Durable = true;
-                        c.AutoDelete = false;
-                        c.ExchangeType = "topic";
-                        c.RoutingKey = setting.RoutingKey;
-                        c.SetQueueArgument("x-message-ttl", 259200000);
-                    });
+                    e.ConfigureConsumeTopology = false;
+
+                    e.SetQueueArgument("x-message-ttl", 259200000);
+
+                    e.PrefetchCount = 50;
+
+                    e.Consumer<ConsumeService>();
+
+                    e.UseRawJsonDeserializer();
+
                 });
 
             });
         });
 
-        //service.AddHostedService<Worker>();
     });

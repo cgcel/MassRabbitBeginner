@@ -35,7 +35,7 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
             var setting = hostContext.Configuration.GetSection(nameof(RabbitMqConfig)).GetSection(nameof(DataSubscribeConfig)).Get<DataSubscribeConfig>();
             cfg.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(setting.Host, setting.VirtualHost, cfg =>
+                cfg.Host(setting.Host, ushort.Parse(setting.Port), setting.VirtualHost, cfg =>
                 {
                     cfg.Username(setting.UserName);
                     cfg.Password(setting.Password);
@@ -63,7 +63,7 @@ IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
             var setting = hostContext.Configuration.GetSection(nameof(RabbitMqConfig)).GetSection(nameof(MsgSubscribeConfig)).Get<MsgSubscribeConfig>();
             cfg.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(setting.Host, setting.VirtualHost, cfg =>
+                cfg.Host(setting.Host, ushort.Parse(setting.Port), setting.VirtualHost, cfg =>
                 {
                     cfg.Username(setting.UserName);
                     cfg.Password(setting.Password);
